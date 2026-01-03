@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radia's Porfile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: beige;
+        }
+
+        nav ul li a:hover {
+            color: rgb(117, 117, 194);
+            font-size: 1.01rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 60px 0;
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+            font-size: 1.7rem;
+            margin: 40px 0;
+        }
+
+        .resume-btn {
+            display: inline-block;
+            background: rgb(170, 107, 228);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        .resume-btn:hover {
+            background: rgb(150, 90, 210);
+            transform: translateY(-2px);
+        }
+
+
+        /* .leftsection .buttons {
+            padding: 50px 0;
+        } */
+
+        .rightsection img {
+            width: 90%;
+
+        }
+
+        .pure {
+            color: rgb(170, 107, 228);
+        }
+
+        #element {
+            color: rgb(170, 107, 228);
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 40vh;
+        }
+
+        .secondsection h1 {
+            font-size: 2rem;
+            color: rgb(170, 107, 228);
+            margin-bottom: 15px;
+        }
+
+        .thirdsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 40vh;
+        }
+
+        .thirdsection h1 {
+            font-size: 2rem;
+            color: rgb(170, 107, 228);
+            margin-bottom: 15px;
+        }
+
+        .thirdsection .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .thirdsection .skill {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: rgb(18, 18, 62);
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 1rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: background 0.3s ease;
+        }
+
+        .thirdsection .skill i {
+            font-size: 1.2rem;
+        }
+
+        .thirdsection .skill:hover {
+            background: rgb(50, 50, 90);
+        }
+
+        #contact {
+            max-width: 80vw;
+            margin: 60px auto;
+            padding: 20px;
+            text-align: left;
+        }
+
+        /* Style the heading */
+        #contact h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: rgb(170, 107, 228);
+        }
+
+        .contact-info {
+            max-width: 80vw;
+            margin: auto;
+            height: 40vh;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            font-size: 1rem;
+        }
+
+        .contact-info a {
+            color: #aaa;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: rgb(170, 107, 228);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            background: rgb(18, 18, 62);
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: beige;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            color: rgb(170, 107, 228);
+        }
+
+        .projects-placeholder {
+            padding: 28px;
+            border-radius: 10px;
+            border: 2px dashed rgba(255, 255, 255, 0.08);
+            color: var(--muted);
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.01), transparent);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Radia's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My name is <span class="pure">Radia Zaman</span>
+                <div>and I am a </div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <a class="resume-btn" href="resume.pdf" target="_blank" rel="noopener">Get Resume</a>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="port.png" alt="">
+            </div>
+        </section>
+        <section id="about" class="secondsection">
+            <h1>About Me</h1>
+
+            <p>
+                Hi! I'm <strong>Radia Zaman</strong>, a curious mind and passionate <strong>Frontend
+                    Developer</strong>.
+                I'm currently studying Computer Science and Engineering at <strong>East West University</strong>
+                (Spring 2025).
+                <br><br>
+                My coding journey begin in September 2024 when I started Phitron's CSE Fundamentals course and
+                learned
+                C, C++, Python, MySQL, DSA, JavaScript, and Django.
+                <br><br>
+                Today, I focus on Frontend Development, turning ideas into clean, interactive, and user-friendly
+                websites.
+            </p>
+
+        </section>
+        <section class="thirdsection">
+            <h1>My Skills</h1>
+            <div class="skills-container">
+                <div class="skill"><i class="devicon-html5-plain colored"></i> HTML</div>
+                <div class="skill"><i class="devicon-css3-plain colored"></i> CSS</div>
+                <div class="skill"><i class="devicon-javascript-plain colored"></i> JavaScript</div>
+                <div class="skill"><i class="devicon-bootstrap-plain colored"></i> Bootstrap</div>
+                <div class="skill"><i class="devicon-tailwindcss-plain colored"></i> Tailwind</div>
+                <div class="skill"><i class="devicon-python-plain colored"></i> Python</div>
+                <div class="skill"><i class="devicon-c-plain colored"></i> C / C++</div>
+                <div class="skill"><i class="devicon-mysql-plain colored"></i> MySQL</div>
+                <div class="skill"><i class="devicon-django-plain colored"></i> Django</div>
+                <div class="skill"><i class="devicon-figma-plain colored"></i> Figma</div>
+                <div class="skill"><i class="devicon-git-plain colored"></i> Git & GitHub</div>
+            </div>
+        </section>
+
+        <section id="projects" class="reveal">
+            <h2>My Projects</h2>
+            <div class="projects-placeholder">🚧 Projects will be added here soon. Stay tuned!</div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <div class="contact-info">
+                <a href="https://www.linkedin.com/in/radia-zaman-a44587344/" target="_blank"><i
+                        class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/Radia798" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <a href="mailto:radiazaman798@gmail.com"><i class="fas fa-envelope"></i> radiazaman798@gmail.com</a>
+                <span><i class="fas fa-phone"></i> 01306897894</span>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <a href="#about">About</a> |
+            <a href="#projects">Projects</a> |
+            <a href="#contact">Contact</a>
+        </div>
+        <p>© 2025 Radia Zaman. All Rights Reserved.</p>
+    </footer>
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Front-end Developer.', '&amp;  Web Designer.'],
+            typeSpeed: 50,
+            backSpeed: 40,
+            backDelay: 1000,
+            loop: true
+        });
+    </script>
+
+</body>
+
+</html>

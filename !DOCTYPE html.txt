@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Radia Zaman | Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-dark: #070a1a;
+      --bg-light: #0e1230;
+      --primary: #a855f7;
+      --text-main: #ffffff;
+      --text-muted: #cbd5f5;
+      --card-bg: #12163a;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(180deg, var(--bg-dark), var(--bg-light));
+      color: var(--text-main);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* ================= NAVBAR ================= */
+    header {
+      width: 100%;
+      background: rgba(14, 18, 48, 0.9);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 32px;
+    }
+
+    nav ul li a {
+      font-size: 15px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: var(--primary);
+    }
+
+    /* ================= SECTIONS ================= */
+    section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 100px 24px;
+    }
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 24px;
+      color: var(--primary);
+    }
+
+    p {
+      color: var(--text-muted);
+      font-size: 16px;
+    }
+
+    /* ================= HERO ================= */
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 60px;
+      min-height: 90vh;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 16px;
+    }
+
+    .hero h1 span {
+      color: var(--primary);
+    }
+
+    .hero h3 {
+      font-weight: 400;
+      margin-bottom: 32px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 32px;
+      background: var(--primary);
+      color: #fff;
+      border-radius: 30px;
+      font-size: 15px;
+      font-weight: 500;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 30px rgba(168, 85, 247, 0.4);
+    }
+
+    .hero-image {
+      display: flex;
+      justify-content: center;
+    }
+
+    .hero-image img {
+      max-width: 100%;
+      border-radius: 20px;
+    }
+
+    /* ================= SKILLS ================= */
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .skill {
+      background: var(--card-bg);
+      padding: 12px 20px;
+      border-radius: 25px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    /* ================= CONTACT ================= */
+    .contact-list {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .contact-list a {
+      color: var(--text-muted);
+      font-size: 15px;
+    }
+
+    .contact-list a:hover {
+      color: var(--primary);
+    }
+
+    /* ================= FOOTER ================= */
+    footer {
+      background: #0b0f2a;
+      padding: 24px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    /* ================= RESPONSIVE ================= */
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      nav ul {
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <div class="nav-container">
+      <div class="logo">Radia's Portfolio</div>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div>
+      <h1>Hi, My name is <span>Radia Zaman</span></h1>
+      <h3>Front-end Developer</h3>
+      <a href="#" class="btn">Get Resume</a>
+    </div>
+    <div class="hero-image">
+      <img src="illustration.png" alt="Developer Illustration">
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hi! I'm Radia Zaman, a curious and passionate Frontend Developer. I'm currently
+      studying Computer Science and Engineering at East West University (Spring 2025).
+    </p>
+    <br />
+    <p>
+      My coding journey started in September 2024 when I completed Phitron's CSE
+      Fundamentals course and learned C, C++, Python, MySQL, JavaScript, and Django.
+    </p>
+    <br />
+    <p>
+      Today, I focus on building clean, interactive, and user‑friendly websites.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section>
+    <h2>My Skills</h2>
+    <div class="skills">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Bootstrap</div>
+      <div class="skill">Tailwind</div>
+      <div class="skill">Python</div>
+      <div class="skill">C / C++</div>
+      <div class="skill">MySQL</div>
+      <div class="skill">Django</div>
+      <div class="skill">Figma</div>
+      <div class="skill">Git & GitHub</div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-list">
+      <a href="#">LinkedIn</a>
+      <a href="#">GitHub</a>
+      <a href="mailto:radiazaman798@gmail.com">radiazaman798@gmail.com</a>
+      <a href="tel:01306897894">01306897894</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2025 Radia Zaman. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
